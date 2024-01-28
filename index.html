@@ -5,57 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
-            <a class="logo-header link" href="/index.html">
-                <svg class="logo-header-svg">
-                    <use href=""></use>
+            <a class="logo-header" href="/index.html">
+                <svg class="logo-header" width="45" height="35">
+                    <use href="./images/header.svg#icon-Logo"></use>
                 </svg>
             </a>
             <div class="menu">
-                <a class="tel link">
-                    <svg class="phone">
-                        <use href=""></use>
+                <a class="tel" href="tel:+380631234567">
+                    <svg width="22" height="22">
+                        <use href="./images/header.svg#icon-tel"></use>
                     </svg>
                 </a>
-                <button class="menu-btn">
-                    <svg class="menu-mobile">
-                        <use href=""></use>
+                <button type="button" class="menu-btn">
+                    <svg width="24" height="24">
+                        <use href="./images/header.svg#icon-Burger"></use>
                     </svg>
                 </button> 
             </div>
         </nav>
     </header>
-    <section class="hero container">
-        <h1 class="title" id="anemone">Anemone</h1>
-        <div class="hero-div">
-        <p class="subtitle">flower studio</p>
-        <img 
-            src="./images/home_page.jpg"
-            srcset=""
-            alt=""
-            width="145"
-            height="274">
-        <button class="form-btn">
-            <svg class="form-svg" width="64" height="76">
-                <use href=""></use>
-            </svg>
-        </button>
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-div">
+                <p class="subtitle">flower <br> studio</p>
+                <img class="hero-img"
+                    src="./images/home_page.jpg"
+                    srcset=""
+                    alt=""
+                    width="145"
+                    height="274">
+                <button type="button" class="form-btn">
+                    <svg class="form-svg" width="64" height="76">
+                        <use href="./images/header.svg#icon-btn"></use>
+                    </svg>
+                </button>
+            </div>
+            <h1 class="title" id="anemone">Anemone</h1>
         </div>
     </section>
-    <section class="about container">
-        <h2 class="section-title" id="about">ABOUT</h2>
-        <P class="text"> We are a minimalistic flower studio. We love people and flowers. Therfore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</P>
-        <img 
-            src="./images/about.jpg"
-            srcset=""
-            alt=""
-            width="288"
-            height="178">
-    </section>
-    <section class="store container">
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title" id="about">ABOUT</h2>
+            <div class="about-div">
+                <P class="text"> We are a minimalistic flower studio. We love people and flowers. Therfore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</P>
+                <img class="about-img"
+                    src="./images/about.jpg"
+                    srcset="./images/about@2x.jpg 2x"
+                    alt="pink flowers"
+                    width="288"
+                    height="178">
+            </div>
+        </div>
+    </section> 
+    <section class="store">
+        <div class="container">
         <h2 class="section-title" id="store">STORE</h2>
         <ul class="store-list list">
             <li class="store-li">
@@ -98,45 +109,46 @@
                 width="136"
                 height="155">
                 <div class="store-card">
-                    <h3 class="card-headline">bouquetes size L</h3>
+                    <h3 class="card-headline">bouquets size L</h3>
                     <p class="card-text">from $60</p>
                 </div>
             </li>
         </ul>
         <button class="order-btn">Order flowers</button>
+    </div>
     </section>
     <section class="delivery">
         <div class="container">
             <h2 class="section-title" id="delivery">DELIVERY</h2>
-            <ul class="delivery-list list">
+            <ul class="delivery-list">
                 <li class="delivery-li">
-                    <p class="number">1</p>
+                    <div class="number">1</div>
                     <p class="text-list">Choose your bouquet and make an order on website</p>
                 </li>
                 <li class="delivery-li">
-                    <p class="number">2</p>
-                    <p class="text-list">Wait for the call to clarify the details of the order. You can pay online or to the courier</p>
+                    <div class="number">2</div>
+                    <p class="text-list"> Wait for the call to clarify the details of the order. You can pay online or to the courier</p>
                 </li>
                 <li class="delivery-li">
-                    <p class="number">3</p>
-                    <p class="text-list">Wait for the delivery at the selected time or pick up the order from the store</p>
+                    <div class="number">3</div>
+                    <p class="text-list"> Wait for the delivery at the selected time or pick up the order from the store</p>
                 </li>
                 <li class="delivery-li">
-                    <p class="number">4</p>
-                    <p class="text-list">Make someone happy or enjoy yourself</p>
+                    <div class="number">4</div>
+                    <p class="text-list"> Make someone happy or enjoy yourself</p>
                 </li>
             </ul>
-        </div>
         <img 
             src="./images/delivery.jpg"
             srcset=""
             alt=""
             width=""
             height="135">
+        </div>
     </section>
     <section class="blog container">
         <h2 class="section-title">BLOG</h2>
-        <ul class="blog-list list">
+        <ul class="blog-list">
 
         </ul>
         <p class="text">Follow to our newsletter</p>
@@ -144,35 +156,42 @@
     </section>
     <footer class="footer">
         <div class="footer-div container">
+        <div class="logo">
+            <a href="/index.html">
+                <svg width="57" height="73">
+                    <use href="./images/logo.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
         <div class="navigation">
             <h3 class="footer-title">Navigation</h3>
-            <ul class="navigation-list list">
+            <ul class="navigation-list">
                 <li class="navigation-li">
-                    <a class="navigation-link link" href="#anemone">Anemone</a>
+                    <a class="navigation-link text-footer" href="#anemone">Anemone</a>
                 </li>
                 <li class="navigation-li">
-                    <a class="navigation-link link" href="#about">About us</a>
+                    <a class="navigation-link text-footer" href="#about">About us</a>
                 </li>
                 <li class="navigation-li">
-                    <a class="navigation-link link" href="#store">Store</a>
+                    <a class="navigation-link text-footer" href="#store">Store</a>
                 </li>
                 <li class="navigation-li">
-                    <a class="navigation-link link" href="#delivery">Delivery</a>
+                    <a class="navigation-link text-footer" href="#delivery">Delivery</a>
                 </li>
             </ul>
         </div>
         <div class="opening">
             <h3 class="footer-title">Opening times</h3>
-            <p class="text-footer">Every day 9:00 - 22:00</p>
+            <p class="text-footer">Every day <br> 9:00 - 22:00</p>
         </div>
         <div class="contacts">
             <h3 class="footer-title">Contacts</h3>
-            <ul class="contacts-list list">
+            <ul class="contacts-list">
                 <li class="contacts-li">
-                    <a class="contacts-link link" href="tel:+380631234567">+38 063 123 45 67</a>
+                    <a class="contacts-link text-footer" href="tel:+380631234567">+38 063 123 45 67</a>
                 </li>
                 <li class="contacts-li">
-                    <a class="contacts-link link" href="mailto:anemonestudio@example.com">anemonestudio@example.com</a>
+                    <a class="contacts-link text-footer" href="mailto:anemonestudio@example.com">anemonestudio@example.com</a>
                 </li>
                 <li class="contacts-li">
                     <p class="text-footer">Reitarska Street, 11 Kyiv, Ukraine</p>
@@ -182,14 +201,18 @@
         <div class="social-media">
             <ul class="media-list">
                 <li class="media-li">
-                    <svg class="media-svg" width="28" height="28">
-                        <use href=""></use>
-                    </svg>
+                    <a href="/">
+                        <svg class="media-svg" width="28" height="28">
+                            <use href="./images/media.svg#fb"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="media-li">
-                    <svg class="media-svg" width="28" height="28">
-                        <use href=""></use>
-                    </svg>
+                    <a href="/">
+                        <svg class="media-svg" width="28" height="28">
+                            <use href="./images/media.svg#ins"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
