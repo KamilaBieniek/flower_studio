@@ -42,7 +42,7 @@
                     alt=""
                     width="145"
                     height="274">
-                <button type="button" class="form-btn">
+                <button type="button" class="form-btn" data-modal-open>
                     <svg class="form-svg" width="64" height="76">
                         <use href="./images/header.svg#icon-btn"></use>
                     </svg>
@@ -218,5 +218,24 @@
         </div>
         </div>
     </footer>
+    <div data-modal class="thank-window is-hidden">
+        <div class="thank-body">
+            <div class="thank-you">
+                <button data-modal-close type="button" class="close-btn">
+                    x<svg width="12" height="12" class="icon-x">
+                        <use href=""></use>
+                    </svg>
+                </button>
+                <img class="img-thank"
+                src="./images/thank.jpg"
+                width="188"
+                height="142">
+                <h4 class="title-thank">Thank you!</h4>
+                <p class="text-thank">We have received your contact and we will reach you soon.</p>
+                <button type="button" class="continue-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/data-modal.js"></script>
 </body>
 </html>
